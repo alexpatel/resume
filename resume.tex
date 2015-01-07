@@ -1,153 +1,84 @@
-\documentclass[]{article}
-\usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-    \usepackage{xltxtra,xunicode}
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-  \newcommand{\euro}{€}
-\fi
-% use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
-\usepackage{longtable,booktabs}
-\ifxetex
-  \usepackage[setpagesize=false, % page size defined by xetex
-              unicode=false, % unicode breaks when used with xetex
-              xetex]{hyperref}
-\else
-  \usepackage[unicode=true]{hyperref}
-\fi
-\hypersetup{breaklinks=true,
-            bookmarks=true,
-            pdfauthor={},
-            pdftitle={},
-            colorlinks=true,
-            citecolor=blue,
-            urlcolor=blue,
-            linkcolor=magenta,
-            pdfborder={0 0 0}}
-\urlstyle{same}  % don't use monospace font for urls
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\setcounter{secnumdepth}{0}
+\documentclass[margin]{res}
+\usepackage{newcent}   % uses new century schoolbook postscript font  
+\topmargin=-0.5in  % start text higher on the page
+\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+\begin{document}  
 
-\date{}
+\name{ALEXANDER H. PATEL}
 
-\begin{document}
+\address{{\tt alexanderpatel@college.harvard.edu} \\(720) 320-1185\\ Adams Mail Center Box 191 \\ 26 Plympton Street \\   Cambridge, MA 02138 }
 
-\section{Johnny Coder}\label{johnny-coder}
+\begin{resume}                        
 
-\begin{longtable}[c]{@{}ll@{}}
-\toprule
-1 MyAddress email@ex & ample.com\tabularnewline
-MyTown 1000 @twitter & \_handle\tabularnewline
-MyCountry 1800 my-ph & one-nr\tabularnewline
-\bottomrule
-\end{longtable}
-
-\subsection{Education}\label{education}
-
-2010-2014 (expected) : \textbf{PhD, Computer Science}; Awesome
-University (MyTown)
-
-\emph{Thesis title: Deep Learning Approaches to the Self-Awesomeness
-Estimation Problem}
-
-2007-2010 : \textbf{BSc, Computer Science and Electrical Engineering};
-University of HomeTown (HomeTown)
-
-\emph{Minor: Awesomeology}
-
-\subsection{Experience}\label{experience}
-
-\textbf{Your Most Recent Work Experience:}
-
-Short text containing the type of work done, results obtained, lessons
-learned and other remarks. Can also include lists and links:
-
-\begin{itemize}
-\item
-  First item
-\item
-  Item with \href{http://www.example.com}{link}. Links will work both in
-  the html and pdf versions.
-\end{itemize}
-
-\textbf{That Other Job You Had}
-
-Also with a short description.
-
-\subsection{Technical Experience}\label{technical-experience}
-
-My Cool Side Project : For items which don't have a clear time ordering,
-a definition list can be used to have named items.
-
-\begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  These items can also contain lists, but you need to mind the
-  indentation levels in the markdown source.
-\item
-  Second item.
-\end{itemize}
-
-Open Source : List open source contributions here, perhaps placing
-emphasis on the project names, for example the \textbf{Linux Kernel},
-where you implemented multithreading over a long weekend, or
-\textbf{node.js} (with \href{http://nodejs.org}{link}) which was
-actually totally your idea\ldots{}
-
-Programming Languages : \textbf{first-lang:} Here, we have an
-itemization, where we only want to add descriptions to the first few
-items, but still want to mention some others together at the end. A
-format that works well here is a description list where the first few
-items have their first word emphasized, and the last item contains the
-final few emphasized terms. Notice the reasonably nice page break in the
-pdf version, which wouldn't happen if we generated the pdf via html.
-
-\begin{verbatim}
-: **second-lang:** Description of your experience with second-lang,
-perhaps again including a [link] [ref], this time placing the url
-reference elsewhere in the document to reduce clutter (see source
-file).
-
-: **obscure-but-impressive-lang:** We both know this one's pushing
-it.
+\section{EDUCATION}     
+        \textbf{Harvard College} (Cambridge, MA) \\
+                Bachelor of Arts, expected May 2017.  \\
+                Joint Major, Computer Science and Philosophy. \\
+                GPA: 3.7/4.0. 
  
-: Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
-\end{verbatim}
+                {\it Courses} \\
+                \begin{ncolumn}{2}
+                        $\cdot$ Systems Programming       &  $\cdot$ Discrete Mathematics      \\
+                        $\cdot$ Artificial Intelligence   &  $\cdot$ Mathematical Logic        \\
+                        $\cdot$ Data Structures and Algorithms       &  $\cdot$ Linear Algebra and Real Analysis     \\
+                        $\cdot$ Foundations of Statistical Software  &  $\cdot$ Mechanics and Special Relativity     \\
+                \end{ncolumn}
 
-\subsection{Extra Section, Call it Whatever You
-Want}\label{extra-section-call-it-whatever-you-want}
+        \textbf{Kent Denver School} (Englewood, CO) \\
+                GPA: 4.3/4.0. \\
+                Cum Laude Society Member, AP Scholar with Distinction, National Merit Finalist. \\
+                Debate Captain, Model U.N. Captain, Varsity Lacrosse Goalie. \\
+                SAT Reasoning: 2230 (M720, R720, W790). SAT II Physics: 800, Math II 800. \\
 
-\begin{itemize}
-\item
-  Human Languages:
-\item
-  English (native speaker)
-\item
-  ???
-\item
-  This is what a nested list looks like.
-\item
-  Random tidbit
-\item
-  Other sort of impressive-sounding thing you did
-\end{itemize}
+\section{EXPERIENCE}      
+         \begin{tabular}{p{3in} r} 
+                 The Free Software Foundation &  Boston, MA 
+         \end{tabular}	
+         \begin{itemize} % \item[] prevents a bullet from appearing
+                 \item[] Catalogued for Serials Dept.; data entry 
+		 \end{itemize} 
 
+		 \begin{tabular}{p{3in} r}
+                 Black Creek Capital &  Denver, CO 
+         \end{tabular}	
+		 \begin{itemize}
+                   \item[] Hired as dishwasher, promoted to cook 
+         \end{itemize}
+
+         \begin{tabular}{p{3in} r} 
+          Denver Country Club Denver, CO &  Summer 2009-2013 
+         \end{tabular}
+         \begin{itemize}					        
+                  \item[] Caddy.  
+         \end{itemize}
+ 
+\section{ACTIVITIES}
+         \begin{tabular}{p{3in} r} 
+                The Harvard Crimson & Fall 2013 - Present \\
+         \end{tabular}
+         \begin{itemize}					        
+                  \item[] Caddy.  
+         \end{itemize}
+ 
+         \begin{tabular}{p{3in} r} 
+                 Harvard Club Lacrosse, Midfield & Fall 2013 - Present \\
+         \end{tabular}
+         \begin{itemize}					        
+                  \item[] Caddy.  
+         \end{itemize}
+ 
+         \begin{tabular}{p{3in} r} 
+                Intel Computer Clubhouse, Boston Museum of Science & Spring 2013 - Present \\
+         \end{tabular}
+         \begin{itemize}					        
+                  \item[] Clubhouse Mentor .  
+         \end{itemize}
+ 
+
+
+\section{SKILLS} 
+                Programming Languages: Python, C, R, Javascript. \\
+                Computer Skills: UNIX Systems, Django, SQL, HTML/CSS, Adobe Creative Suite, Microsoft Office.
+                Languages: English, French. 
+\end{resume} 
 \end{document}
