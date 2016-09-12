@@ -2,12 +2,17 @@
 % Description: Resume LaTeX source
 
 \documentclass{res}
+\usepackage{hyperref}
 \topmargin=-0.5in
 \addtolength{\textwidth}{0.8in}
 \addtolength{\textheight}{8in}
-\addtolength{\oddsidemargin}{-.5in}
-\resumewidth=7.4in
-\newsectionwidth{8pt}
+\addtolength{\oddsidemargin}{-.4in}
+\resumewidth=7.25in
+\newsectionwidth{12pt}
+
+\makeatletter
+\def\section#1{\@@section{#1}\vskip .11cm}
+\makeatother
 
 \begin{document}
 
@@ -15,100 +20,85 @@
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 \moveleft.5\hoffset\centerline{(720) 320-1185}
 \moveleft.5\hoffset\centerline{alexanderpatel@college.harvard.edu}
+\moveleft.5\hoffset\centerline{\href{http://www.github.com/alexpatel}{github.com/alexpatel}}
+
 
 \begin{resume}
 
 \section{EDUCATION}
-    Bachelor of Arts, Philosophy and Mathematics, expected May 2018 (on leave 2015-2016) \\
-    Harvard College, Cambridge, MA \\
-    Minor: Computer Science \\
+    \textbf{Harvard College}, Cambridge, MA \\
+    Bachelor of Arts, Philosophy and Mathematics, expected May 2018 (on leave
+    2015-2016). Minor in Computer Science. \\
     GPA: 3.56/4.0 (Philosophy: 3.85/4.0 (4 courses), Mathematics: 3.85/4.0 (4 courses)) \\
     Relevant coursework: Operating Systems, Data Structures and Algorithms,
     Artificial Intelligence, Statistical Software, Discrete Mathematics, Linear
-    Algebra, Real Analysis, Logic, Modal Logic. \\
+    Algebra, Real Analysis, Logic, Modal Logic, Abstract Algebra, Topology. \\
     GRE M:165 V:164 \\
     SAT I: M:720 V:720 R:790 (SAT II: Math II:800 Physics:800)
 
 \section{COMPUTER SKILLS}
-    {\sl Languages:} Fluent: Python, C, R, SQL, Beginner: Javascript, Java \\
-    {\sl Tools:} Unix Shell, Git, JIRA, Amazon AWS, NumPy/Pandas, Twisted
-        networking framework, MySQL, Redis, Nginx, HTML/CSS, Latex. \\
-    {\sl Skills:} asynchronous network programming, MySQL database
-        administration, data ETL processes, Agile (Scrum) development,
-        optimization and learning algorithms.
+    {\sl Languages:} Fluent: Python, C, R, SQL; Beginner: Ruby, Javascript, Java. \\
+    {\sl Tools:} Unix Shell, Git, Amazon AWS, NumPy/Pandas, JIRA, MySQL, Redis,
+        Nginx, HTML/CSS, Latex.
                 
 \section{WORK EXPERIENCE}
     {\sl Quantitative Software Engineer} \hfill {\sl September 2015 - September 2016} \\
-    EverQuote (formerly Adharmonics), Cambridge, MA 
-
+    \textbf{EverQuote (formerly Adharmonics)}, Cambridge, MA 
     \begin{itemize}  \itemsep -2.5pt
-
         \item Acted as technical lead for development of real-time bidding
             (RTB) bidder platform. Designed and implemented high-volume,
-            low-latency ($<$100ms) networking server in Python.  Planned and
-            organized project work for team of four engineers.  Coordinated
-            technical platform integration with real-time auction exchanges.
-
+            low-latency ($<$100ms) networking server in Python.  Oorganized
+            project work for team of four engineers.  Coordinated technical
+            platform integration with real-time auction exchanges.
         \item Implemented machine learning (esp. multi-armed bandit) algorithms
             for e-mail and banner display content optimization. 
-
          \item Earned 2nd place in company hackathon with real-time site
             arrivals geographic visualization.
-
     \end{itemize}
-                 
+
     {\sl Software Engineering Intern} \hfill {\sl Summer 2015} \\
-    Adharmonics, Cambridge, MA
-
+    \textbf{Adharmonics}, Cambridge, MA
     \begin{itemize} \itemsep -2.5pt
-
         \item Built third-party ad server for Google AdWords display
             advertising network. 
-
     \end{itemize} 
 
     {\sl Student Campaigns Organizer} \hfill {\sl May 2014 - May 2015} \\
-    Free Software Foundation, Boston, MA
-
+    \textbf{Free Software Foundation}, Boston, MA
     \begin{itemize}   \itemsep -2.5pt 
         \item Coordinated developer action on Javascript licensing and Digital
             Rights Management campaigns. Authored technical issue posts topical
             to the free software community.
-
     \end{itemize} 
 
 \section{TEACHING}
     {\sl Course Assistant} \hfill {\sl Spring 2016 - Present} \\
-    Harvard Mathematics Department
+    \textbf{Harvard Mathematics Department}
 
     \begin{itemize} \itemsep -2.5pt
         \item Teaching staff member for Math E-23a: Linear Algebra and Real
             Analysis I (Fall 2016) and Math 156: Mathematical Foundations of
             Statistical Software (Spring 2016).
-
-        \item Hosted weekly section and office hours; graded student R homework
+        \item Administered weekly section and office hours; graded student R homework
             assignments and proof presentations.
-
     \end{itemize} 
 
     {\sl Teaching Fellow} \hfill {\sl 2015-2016} \\
-    Harvard Computer Science Department
+    \textbf{Harvard Computer Science Department}
 
     \begin{itemize} \itemsep -2.5pt
         \item Teaching staff member for CS161: Operating Systems (Spring 2016)
             and CS61: Systems Programming (Fall 2015).
-
-        \item Administered weekly section and office hours. Graded and assisted
-            with student C programming assignments, design documents, and toy
-            kernel implementations.
-
+        \item Hosted weekly on-campus and virtual section and office hours.
+            Graded and assisted with student C programming assignments and toy
+            OS kernel implementations.
     \end{itemize} 
 
 \section{EXTRA-CURRICULAR ACTIVITIES}      
-    The Harvard Crimson, programmer for website Python back-end and news
-    reporter on Harvard Business School beat\\
-    % Harvard club lacrosse, midfield player \\
-    Boston Museum of Science Computer Clubhouse, volunteer student mentor
+    The Harvard Crimson, news reporter on Harvard Business School beat \hfill {\sl Fall 2013 - Spring 2015}\\
+    The Harvard Crimson, programmer for website Python back-end \hfill {\sl Fall 2013 - Spring 2015}\\
+    % Boston Museum of Science Computer Clubhouse, volunteer student mentor \hfill {\sl Fall 2013 - Spring 2014}
+    Harvard Club Lacrosse, midfield player \hfill {\sl Fall 2013 - Fall 2014}\\
  
 \end{resume}
 \end{document}
