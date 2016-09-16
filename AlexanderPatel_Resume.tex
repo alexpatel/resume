@@ -2,7 +2,10 @@
 % Description: Resume LaTeX source
 
 \documentclass{res}
-\usepackage{hyperref}
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
+
 \topmargin=-0.5in
 \addtolength{\textwidth}{0.8in}
 \addtolength{\textheight}{8in}
@@ -29,17 +32,17 @@
     \textbf{Harvard College}, Cambridge, MA \\
     Bachelor of Arts, Philosophy and Mathematics, expected May 2018 (on leave
     2015-2016). Minor in Computer Science. \\
-    GPA: 3.56/4.0 (Philosophy: 3.85/4.0 (4 courses), Mathematics: 3.85/4.0 (4 courses)) \\
+    GPA: 3.56/4.0 (Philosophy: 3.85/4.0 (4 courses), Mathematics: 3.85/4.0 (4 courses)). \\
     Relevant coursework: Operating Systems, Data Structures and Algorithms,
     Artificial Intelligence, Statistical Software, Discrete Mathematics, Linear
     Algebra, Real Analysis, Logic, Modal Logic, Abstract Algebra, Topology. \\
-    GRE M:165 V:164 \\
-    SAT I: M:720 V:720 R:790 (SAT II: Math II:800 Physics:800)
+    GRE M:165 V:164 W:4.0. \\
+    SAT I: M:720 V:720 R:790 (SAT II: Math II:800 Physics:800).
 
 \section{COMPUTER SKILLS}
-    {\sl Languages:} Fluent: Python, C, R, SQL; Beginner: Ruby, Javascript, Java. \\
+    {\sl Languages:} Expert: Python, C, R, SQL. Beginner: Ruby, Javascript, Java. \\
     {\sl Tools:} Unix Shell, Git, Amazon AWS, NumPy/Pandas, JIRA, MySQL, Redis,
-        Nginx, HTML/CSS, Latex.
+        Nginx, HTML/CSS, LaTeX.
                 
 \section{WORK EXPERIENCE}
     {\sl Quantitative Software Engineer} \hfill {\sl September 2015 - September 2016} \\
@@ -47,7 +50,7 @@
     \begin{itemize}  \itemsep -2.5pt
         \item Acted as technical lead for development of real-time bidding
             (RTB) bidder platform. Designed and implemented high-volume,
-            low-latency ($<$100ms) networking server in Python.  Oorganized
+            low-latency ($<$100ms) networking server in Python. Organized
             project work for team of four engineers.  Coordinated technical
             platform integration with real-time auction exchanges.
         \item Implemented machine learning (esp. multi-armed bandit) algorithms
@@ -59,7 +62,7 @@
     {\sl Software Engineering Intern} \hfill {\sl Summer 2015} \\
     \textbf{Adharmonics}, Cambridge, MA
     \begin{itemize} \itemsep -2.5pt
-        \item Built third-party ad server for Google AdWords display
+        \item Built third-party ad server in Python for Google AdWords display
             advertising network. 
     \end{itemize} 
 
@@ -73,7 +76,7 @@
 
 \section{TEACHING}
     {\sl Course Assistant} \hfill {\sl Spring 2016 - Present} \\
-    \textbf{Harvard Mathematics Department}
+    \textbf{Harvard University Mathematics Department}
 
     \begin{itemize} \itemsep -2.5pt
         \item Teaching staff member for Math E-23a: Linear Algebra and Real
@@ -84,7 +87,7 @@
     \end{itemize} 
 
     {\sl Teaching Fellow} \hfill {\sl 2015-2016} \\
-    \textbf{Harvard Computer Science Department}
+    \textbf{Harvard University Computer Science Department}
 
     \begin{itemize} \itemsep -2.5pt
         \item Teaching staff member for CS161: Operating Systems (Spring 2016)
@@ -98,7 +101,7 @@
     The Harvard Crimson, news reporter on Harvard Business School beat \hfill {\sl Fall 2013 - Spring 2015}\\
     The Harvard Crimson, programmer for website Python back-end \hfill {\sl Fall 2013 - Spring 2015}\\
     % Boston Museum of Science Computer Clubhouse, volunteer student mentor \hfill {\sl Fall 2013 - Spring 2014}
-    Harvard Club Lacrosse, midfield player \hfill {\sl Fall 2013 - Fall 2014}\\
- 
+    Harvard Club Lacrosse, midfield player \hfill {\sl Fall 2013 - Fall 2014}
+
 \end{resume}
 \end{document}
