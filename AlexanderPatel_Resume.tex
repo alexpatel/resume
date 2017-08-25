@@ -5,7 +5,6 @@
 \usepackage{color,hyperref}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
 \hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
-
 \topmargin=-0.5in
 \addtolength{\textwidth}{0.8in}
 \addtolength{\textheight}{8in}
@@ -13,9 +12,9 @@
 \resumewidth=7.25in
 \newsectionwidth{12pt}
 
-\makeatletter
-\def\section#1{\@@section{#1}\vskip .11cm}
-\makeatother
+% \makeatletter
+% \def\section#1{\@@section{#1}\vskip .11cm}
+% \makeatother
 
 \begin{document}
 
@@ -23,28 +22,55 @@
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 \moveleft.5\hoffset\centerline{(720) 320-1185}
 \moveleft.5\hoffset\centerline{alexanderpatel@college.harvard.edu}
-\moveleft.5\hoffset\centerline{\href{http://www.github.com/alexpatel}{github.com/alexpatel}}
-
-
+\moveleft.5\hoffset\centerline{\href{http://www.github.com/alexpatel}{www.github.com/alexpatel}}
 \begin{resume}
-
 \section{EDUCATION}
-    \textbf{Harvard College}, Cambridge, MA \\
-    Bachelor of Arts, Philosophy and Mathematics, expected May 2018 (on leave
-    2015-2016). Minor in Computer Science. \\
-    GPA: 3.56/4.0 (Philosophy: 3.85/4.0 (4 courses), Mathematics: 3.85/4.0 (4 courses)). \\
-    Relevant coursework: Operating Systems, Data Structures and Algorithms,
-    Artificial Intelligence, Statistical Software, Discrete Mathematics, Linear
-    Algebra, Real Analysis, Logic, Modal Logic, Abstract Algebra, Topology. \\
+    \textbf{Harvard College}, Cambridge, MA \hfill {\sl Fall 2013 - Present}\\
+    Bachelor of Arts, Philosophy and Mathematics, expected May 2018. Minor in Computer Science. \\
+    GPA: 3.615/4.0 (Philosophy: 3.83/4.0 (7 courses), Mathematics: 3.88/4.0 (5 courses)). \\
     GRE M:165 V:164 W:4.0. \\
-    SAT I: M:720 V:720 R:790 (SAT II: Math II:800 Physics:800).
+    Relevant coursework: linear algebra, real analysis, complex analysis,
+    abstract algebra, combinatorics, probability theory, data structures and
+    algorithms, systems programming, operating systems, artificial
+    intelligence, logic, modal logic.
+    % SAT I: M:720 V:720 R:790 (SAT II: Math II:800 Physics:800).
 
-\section{COMPUTER SKILLS}
-    {\sl Languages:} Expert: Python, C, R, SQL. Beginner: Ruby, Javascript, Java. \\
-    {\sl Tools:} Unix Shell, Git, Amazon AWS, NumPy/Pandas, JIRA, MySQL, Redis,
-        Nginx, HTML/CSS, LaTeX.
-                
+\section{TEACHING EXPERIENCE}
+    {\sl Teaching Fellow} \\
+    \textbf{Harvard University Computer Science Department}
+
+    \begin{itemize} \itemsep -2.5pt
+        \item Hosted weekly on-campus and virtual section and office hours.
+            Graded and assisted with student C programming assignments and toy
+            OS kernel implementations.
+        \begin{itemize} \itemsep -2.5pt
+            \item Computer Science 161: Operating Systems \hfill {\sl Spring 2017}
+            \item Computer Science 161: Operating Systems \hfill {\sl Spring 2016}
+            \item Computer Science 61: Systems Programming and Machine Organization \hfill {\sl Fall 2015}
+        \end{itemize} 
+    \end{itemize} 
+
+    {\sl Course Assistant} \\
+    \textbf{Harvard University Mathematics Department}
+    \begin{itemize} \itemsep -2.5pt
+        \item Administered weekly section and office hours. Graded student R homework
+            assignments and proof presentations.
+        \begin{itemize} \itemsep -2.5pt
+            \item Math E-156: Mathematical Foundations of Statistical Software \hfill {\sl Spring 2017}
+            \item Math E-23a: Linear Algebra and Real Analysis \hfill {\sl Fall 2016}
+            \item Math 156: Mathematical Foundations of Statistical Software \hfill {\sl Spring 2016}
+        \end{itemize} 
+    \end{itemize} 
+
+  
 \section{WORK EXPERIENCE}
+    {\sl Technology Consultant} \hfill {\sl September 2016 - Present} \\
+    \textbf{Case Strategy, LLC}, Portsmouth, NH
+    \begin{itemize}  \itemsep -2.5pt
+        \item Served as technical advisor for strategy consulting platform
+            powered by IBM Watson artificial intelligence service.
+    \end{itemize}
+
     {\sl Quantitative Software Engineer} \hfill {\sl September 2015 - September 2016} \\
     \textbf{EverQuote (formerly Adharmonics)}, Cambridge, MA 
     \begin{itemize}  \itemsep -2.5pt
@@ -66,42 +92,24 @@
             advertising network. 
     \end{itemize} 
 
-    {\sl Student Campaigns Organizer} \hfill {\sl May 2014 - May 2015} \\
-    \textbf{Free Software Foundation}, Boston, MA
-    \begin{itemize}   \itemsep -2.5pt 
-        \item Coordinated developer action on Javascript licensing and Digital
-            Rights Management campaigns. Authored technical issue posts topical
-            to the free software community.
-    \end{itemize} 
-
-\section{TEACHING}
-    {\sl Course Assistant} \hfill {\sl Spring 2016 - Present} \\
-    \textbf{Harvard University Mathematics Department}
-
-    \begin{itemize} \itemsep -2.5pt
-        \item Teaching staff member for Math E-23a: Linear Algebra and Real
-            Analysis I (Fall 2016) and Math 156: Mathematical Foundations of
-            Statistical Software (Spring 2016).
-        \item Administered weekly section and office hours; graded student R homework
-            assignments and proof presentations.
-    \end{itemize} 
-
-    {\sl Teaching Fellow} \hfill {\sl 2015-2016} \\
-    \textbf{Harvard University Computer Science Department}
-
-    \begin{itemize} \itemsep -2.5pt
-        \item Teaching staff member for CS161: Operating Systems (Spring 2016)
-            and CS61: Systems Programming (Fall 2015).
-        \item Hosted weekly on-campus and virtual section and office hours.
-            Graded and assisted with student C programming assignments and toy
-            OS kernel implementations.
-    \end{itemize} 
+    % {\sl Student Campaigns Organizer} \hfill {\sl May 2014 - May 2015} \\
+    % \textbf{Free Software Foundation}, Boston, MA
+    % \begin{itemize}   \itemsep -2.5pt 
+    %     \item Coordinated developer action on Javascript licensing and Digital
+    %         Rights Management campaigns. Authored technical issue posts topical
+    %         to the free software community.
+    % \end{itemize} 
 
 \section{EXTRA-CURRICULAR ACTIVITIES}      
     The Harvard Crimson, news reporter on Harvard Business School beat \hfill {\sl Fall 2013 - Spring 2015}\\
     The Harvard Crimson, programmer for website Python back-end \hfill {\sl Fall 2013 - Spring 2015}\\
-    % Boston Museum of Science Computer Clubhouse, volunteer student mentor \hfill {\sl Fall 2013 - Spring 2014}
-    Harvard Club Lacrosse, midfield player \hfill {\sl Fall 2013 - Fall 2014}
+    Boston Museum of Science Computer Clubhouse, volunteer student mentor \hfill {\sl Fall 2013 - Spring 2014}
+    % Harvard Club Lacrosse, midfield player \hfill {\sl Fall 2013 - Fall 2014}
 
+\section{COMPUTER SKILLS}
+    {\sl Languages:} Python, R, C, SQL. Beginner: Ruby, Java. \\
+    {\sl Tools:} Unix Shell, Git, NumPy/Pandas, Amazon AWS, vi, MySQL, Redis,
+    Nginx, HTML/CSS, LaTeX.
+      
 \end{resume}
 \end{document}
